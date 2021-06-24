@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
 
-const App = () => {
+const Home = () => {
     const [ip, setIp] = useState([]);
     useEffect(() =>{
         const url=`http://whatismyip-api.herokuapp.com/?fbclid=IwAR3cH1PkUkf98itMDcJFS9Gjdmqyd419m6aznIsOUy1j3ai-SuZ_QDXRnoU`;
@@ -12,7 +11,7 @@ const App = () => {
 
 
     return (
-        <div className="ip-app">
+        <div>
             <h1>
                 {ip.public_ip}
             </h1>
@@ -20,4 +19,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Home;
